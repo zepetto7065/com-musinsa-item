@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.musinsa.product.core.service.ItemSummaryServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-05-02T06:54:36" hostname="ip-10-200-10-14.ap-northeast-2.compute.internal" time="0.075">
+  <properties/>
+  <testcase name="최저가와 최고가가 올바르게 반환되는지 확인" classname="com.musinsa.product.core.service.ItemSummaryServiceTest" time="0.067"/>
+  <testcase name="존재하지 않는 카테고리" classname="com.musinsa.product.core.service.ItemSummaryServiceTest" time="0.003"/>
+  <testcase name="summation_test()" classname="com.musinsa.product.core.service.ItemSummaryServiceTest" time="0.002"/>
+  <testcase name="모든 카테고리를 보유한 브랜드가 없을 경우" classname="com.musinsa.product.core.service.ItemSummaryServiceTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

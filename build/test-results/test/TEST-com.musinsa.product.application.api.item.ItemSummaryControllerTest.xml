@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.musinsa.product.application.api.item.ItemSummaryControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-05-02T06:54:36" hostname="ip-10-200-10-14.ap-northeast-2.compute.internal" time="0.03">
+  <properties/>
+  <testcase name="구현 3- 카테고리 이름으로 최저, 최고 가격 브랜드와 상품 가격을 조회하는 API" classname="com.musinsa.product.application.api.item.ItemSummaryControllerTest" time="0.012"/>
+  <testcase name="구현 2- 단일 브랜드로 모든 카테고리 상품을 구매할 떄 최저가격게 판매하는 브랜드와 카테고리의 상품 가격, 총액을 조회" classname="com.musinsa.product.application.api.item.ItemSummaryControllerTest" time="0.01"/>
+  <testcase name="구현 1-카테고리 별 최저가격 브랜드와 상품 가격, 총액을 조회하는 API" classname="com.musinsa.product.application.api.item.ItemSummaryControllerTest" time="0.006"/>
+  <system-out><![CDATA[2025-05-02T15:54:36.047+09:00  INFO 18001 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.musinsa.product.application.api.item.ItemSummaryControllerTest]: ItemSummaryControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-02T15:54:36.054+09:00  INFO 18001 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.musinsa.product.ProductApplication for test class com.musinsa.product.application.api.item.ItemSummaryControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.2)
+
+2025-05-02T15:54:36.073+09:00  INFO 18001 --- [    Test worker] c.m.p.a.a.i.ItemSummaryControllerTest    : Starting ItemSummaryControllerTest using Java 17.0.14 with PID 18001 (started by sangmoon.yoo in /Users/sangmoon.yoo/private/com-musinsa-product)
+2025-05-02T15:54:36.073+09:00  INFO 18001 --- [    Test worker] c.m.p.a.a.i.ItemSummaryControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2025-05-02T15:54:36.249+09:00  INFO 18001 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-02T15:54:36.291+09:00  INFO 18001 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-02T15:54:36.291+09:00  INFO 18001 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-02T15:54:36.292+09:00  INFO 18001 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-05-02T15:54:36.297+09:00  INFO 18001 --- [    Test worker] c.m.p.a.a.i.ItemSummaryControllerTest    : Started ItemSummaryControllerTest in 0.241 seconds (process running for 4.877)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/item-summary/price
+       Parameters = {categoryName=[상의]}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.musinsa.product.application.api.item.ItemSummaryController
+           Method = com.musinsa.product.application.api.item.ItemSummaryController#getPriceSummary(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"categoryName":"상의","minItem":null,"maxItem":null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/item-summary/single-brand
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.musinsa.product.application.api.item.ItemSummaryController
+           Method = com.musinsa.product.application.api.item.ItemSummaryController#getSingleBrandMinSummary()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"brandName":"D","totalPrice":2000,"details":null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/item-summary/min-price
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.musinsa.product.application.api.item.ItemSummaryController
+           Method = com.musinsa.product.application.api.item.ItemSummaryController#minPriceSummary()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json"]
+     Content type = application/json
+             Body = {"totalPrice":2000,"detailList":null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

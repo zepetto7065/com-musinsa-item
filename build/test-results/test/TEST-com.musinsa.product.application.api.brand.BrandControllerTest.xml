@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.musinsa.product.application.api.brand.BrandControllerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-05-02T06:54:35" hostname="ip-10-200-10-14.ap-northeast-2.compute.internal" time="0.165">
+  <properties/>
+  <testcase name="브랜드 삭제 API 테스트" classname="com.musinsa.product.application.api.brand.BrandControllerTest" time="0.108"/>
+  <testcase name="브랜드 수정 API 테스트" classname="com.musinsa.product.application.api.brand.BrandControllerTest" time="0.024"/>
+  <testcase name="브랜드 생성 API 테스트" classname="com.musinsa.product.application.api.brand.BrandControllerTest" time="0.03"/>
+  <system-out><![CDATA[2025-05-02T15:54:35.154+09:00  INFO 18001 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.musinsa.product.application.api.brand.BrandControllerTest]: BrandControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2025-05-02T15:54:35.202+09:00  INFO 18001 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.musinsa.product.ProductApplication for test class com.musinsa.product.application.api.brand.BrandControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.2)
+
+2025-05-02T15:54:35.219+09:00  INFO 18001 --- [    Test worker] c.m.p.a.api.brand.BrandControllerTest    : Starting BrandControllerTest using Java 17.0.14 with PID 18001 (started by sangmoon.yoo in /Users/sangmoon.yoo/private/com-musinsa-product)
+2025-05-02T15:54:35.219+09:00  INFO 18001 --- [    Test worker] c.m.p.a.api.brand.BrandControllerTest    : No active profile set, falling back to 1 default profile: "default"
+2025-05-02T15:54:35.428+09:00  INFO 18001 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-05-02T15:54:35.515+09:00  INFO 18001 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-02T15:54:35.515+09:00  INFO 18001 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-02T15:54:35.517+09:00  INFO 18001 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2025-05-02T15:54:35.530+09:00  INFO 18001 --- [    Test worker] c.m.p.a.api.brand.BrandControllerTest    : Started BrandControllerTest in 0.326 seconds (process running for 4.11)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
