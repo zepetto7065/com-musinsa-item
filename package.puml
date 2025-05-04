@@ -1,0 +1,37 @@
+@startuml
+package application {
+    [api]
+    [persistence]
+}
+
+package core {
+    [domain]
+    [service]
+}
+
+
+[api] --> [service]
+[persistence] --> [service]
+[service] --> [domain]
+[core] --> [comm]
+
+note right of [api]
+  외부 요청을 처리하는 컨트롤러 계층
+end note
+
+note bottom of [persistence]
+  데이터베이스 접근을 담당하는 저장소 계층
+end note
+
+note left of [service]
+  도메인 로직을 처리하는 서비스 계층 (트랜잭션 관리)
+end note
+
+note right of [domain]
+  핵심 비즈니스 모델과 규칙이 정의된 영역
+end note
+
+note bottom of [comm]
+  공통 유틸 또는 설정 모듈
+end note
+@enduml
